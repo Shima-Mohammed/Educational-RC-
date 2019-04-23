@@ -1,0 +1,246 @@
+
+/*****************************general style***************************/
+body
+{
+	overflow: hidden ;
+	font-family: 'Slabo 27px', serif; /* google font*/
+	box-sizing: border-box ;
+}
+.clr 
+{
+	clear: both ;
+}
+.dis
+{
+	display: none ;
+}
+/******************************************************************/
+/*********************************loader***************************/
+.con-loader
+{
+	width: 100% ; 
+	height: 100% ; 
+	position: fixed; 
+	z-index: 999999999999; 
+	background-color:white ; 
+	
+	
+	
+}
+.con-loader img 
+{
+	max-width: 100% ; 
+	position: relative; 
+	top:50% ;
+	left:50% ; 
+	transform: translate(-50%,-50%);
+	
+}
+/******************************************************************/
+/************************** start of container section***********************/
+
+
+#container{
+  position:absolute;
+  left:20px;
+  top:0px;
+  right:20px;
+  bottom:0px;
+  z-index: 8 ;
+}
+.page_content{
+  width:820px;
+  height:600px;
+  transform-origin: top left;
+  transition: all 500ms ease-in-out !important;
+  position: absolute;
+  }
+
+
+/*****************start of head section ***************/
+#container .page_content .head
+{
+	background: white ; 
+	padding-left: 20px ; 
+	padding-top: 20px ; 
+	padding-bottom: 20px ;
+	margin-bottom: 15px ;
+}
+/***********image audio ***********/
+#container .page_content .head .con-image
+{
+	float: left ;
+	margin-right: 20px ;
+	margin-top: 18px ;
+	cursor: pointer ;
+}
+#container .page_content .head .con-image img
+{
+	max-width: 100% ;
+}
+/*************text**************/
+#container .page_content .head .con-data
+{
+}
+#container .page_content .head .con-data h2
+{
+	font-weight: 500 ;
+}
+/***************************end of head section*****************/
+
+
+/***************************start of questions section ******************/
+
+#container .page_content .con-images 
+{
+	background-color: #0fa0c5 ;
+}
+#container .page_content .con-images .con-questions 
+{
+	margin-left: 2.5% ; 
+	margin-right: 2.5% ;
+	background-color: white ;
+	position: relative; 
+	top:-15px ;
+	border:4px solid #f5821f ;
+	padding: 35px ; 
+	z-index: 5 ;
+	border-radius: 8px ;
+	height: auto ;
+	display: flex ; 
+	justify-content: center ;
+}
+#container .page_content .con-images .con-questions .con-question-details
+{
+	flex:1;
+	background-color: white ;
+	
+}
+/*********************style question image***********/
+#container .page_content .con-images .con-questions .con-question-details .con-image img 
+{
+	max-width: 100% ;
+	cursor: pointer ;
+}
+/************************style numbers************/
+#container .page_content .con-images .con-questions .con-question-details .con-items
+{
+	position: relative ; 
+	left:80px ;
+	top:-230px ;
+	width: 40px ; 
+	height: 40px ; 
+	cursor: pointer ;
+	float: left ;
+	
+}
+#container .page_content .con-images .con-questions .con-question-details .con-items .numbers
+{
+	border:2px solid black;
+    background: white;
+	visibility: hidden ;
+	font-size: 18px ;
+	font-weight:600; 
+	z-index: 99999999999 ;
+	
+}
+#container .page_content .con-images .con-questions .con-question-details .con-items .numbers>div
+{
+	padding: 5px;
+    border-bottom: 1px dashed black;
+	
+}
+#container .page_content .con-images .con-questions .con-question-details .con-items .numbers>div:last-child
+{
+	border-bottom: none !important;
+}
+#container .page_content .con-images .con-questions .con-question-details .con-items>div:last-child
+{
+	border: 2px solid black;
+    width: 40px;
+    height: 40px;
+    box-shadow: 3px 3px 2px rgba(0,0,0,.5);
+	visibility: visible ;
+	margin: 0 auto ;
+	line-height: 32px ;
+	font-size: 18px ;
+	font-weight: 600 ; 
+}
+/***************************end of question section ******************/
+
+/***********************start of opations section *********************/
+#container .page_content .opation
+{
+	width: 100% ;
+	background-color:#deecf6 ;
+	padding:15px 30px 75px 5px ;
+	position: relative ; 
+	top:-30px ;
+	left:0px;
+	
+}
+/*********************restart******************/
+#container .page_content .opation .restart
+{
+	cursor: pointer ;
+	margin-top: 15px ;
+}
+/*****************con-audio********************/
+#container .page_content .opation .instructions
+{
+	background-image: url(../images/draggerBG.png) ;
+	max-width: 100% ;
+	padding: 10px ;
+	padding-left: 5px ;
+	background-size: 100% 100% ;
+	margin-top: 15px ;
+	margin-left: 30px ;
+	
+}
+input[type="range"] 
+{
+ margin-top: 10px ;
+-webkit-appearance: none;
+appearance: none;	
+  width: 100%;
+  height: 3px;
+  border-radius: 5px;   
+  background: white;
+  outline: none;
+  opacity: 0.7;
+  transition: opacity .2s;
+}
+input[type="range"]::-webkit-slider-thumb
+{
+	 
+  -webkit-appearance: none;
+  appearance: none;
+  width: 15px;
+  height: 15px;
+  border-radius: 50%; 
+  background: #fff;
+  cursor: pointer;
+}
+ input[type="range"] ::-moz-range-thumb {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  background: #fff;
+  cursor: pointer;
+}
+#container .page_content .opation .instructions img 
+{
+	cursor: pointer ; 
+	max-width:100%;
+	padding-left: 5px;
+}
+/***************************see all result **********************/
+#container .page_content .opation .see-result
+{
+	cursor: pointer ;
+	margin-top: 20px ;
+}
+/************************end of opations section*************************/
+
+
+/************************** end of container section***********************/ 

@@ -1,0 +1,253 @@
+<!DOCTYPE html>
+<html>
+	<!------------------------start of head tag--------------------->
+	<head>
+		<title>Education RC</title>
+		<meta charset="utf-8">
+		
+		<!--------------------add css botstrap cdn ---------------->
+		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+		<!-------------------google font----------------->
+		<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
+		
+		<!------------------add my stylesheet-------->
+		<link rel="stylesheet" href="css/style.css">
+		
+	</head>
+	<!----------------------end of head tag ----------------------->
+	
+	
+	<!-----------start of body tag--------------------->
+	
+	<body>
+		
+		
+		<!----------------------start of loader section--------------------->
+		<div class="con-loader">
+					<img src="images/Preloader_2.gif">
+				</div>
+		<!------------------------end of loader section------------------>
+		
+	
+		
+		<!-------------------start of container section------------->	
+		<section id="container">
+			<div class="page_content">
+				
+				
+			<!------------------my Audio------------------->
+				<audio  id="myAduio">
+				  <source src="audio/headAudio.mp3" type="audio/mpeg">
+				</audio>
+	      <!-----------------start of head section------------->
+				<section class="head">
+						<div
+							 onclick="displayMyAduio('headAudio.mp3')"
+							 class="con-image">
+							<img src="images/audio_icon.png">
+					</div>
+						<div class="con-data ">
+							<h2>Listen and number. Then ask and answer.</h2>
+					</div>
+						<div class="clr"></div>
+					</section>
+	       <!------------------------end of head section------------->
+			
+			
+			<!---------------------start of question section ------------------------------->	
+		<section class="con-images">
+			<div class="con-questions">
+				
+				<!----------------------------first question--------------------------->
+				 <div  class="con-question-details" id="0">
+								<div class="con-image">
+									<img 
+										 onclick="displayMyAduio('hungryAudio.mp3')"
+										 src="images/p21e4q1_1.png" style="max-width:105% ; margin-left:-20px">
+					 					</div>
+									<div  class="con-items text-center" style="left:80px">
+										<div class="numbers">
+											<div >1</div>
+											<div class="correct">2</div>
+											<div >3</div>
+											<div >4</div>
+											<div>5</div>
+										</div>
+										<div class="con-result" onclick="showNumbersList(this)"></div>
+									</div>
+								</div>
+				
+				<!----------------------------second question--------------------------->
+				       <div  class="con-question-details" id="1">
+								<div class="con-image">
+									<img
+										 onclick="displayMyAduio('tiredAudio.mp3')"
+										 src="images/p21e4q1_2.png" style="max-width:120% ; margin-left:-30px ;margin-top:70px" ></div>
+									<div  class="con-items text-center"  style="left:55px">
+										<div class="numbers">
+											<div >1</div>
+											<div >2</div>
+											<div class="correct">3</div>
+											<div >4</div>
+											<div >5</div>
+										</div>
+										<div class="con-result" onclick="showNumbersList(this)"></div>
+									</div>
+								</div>
+				<!---------------------------third question------------------------------->
+				
+				 <div  class="con-question-details" id="2">
+								<div 
+									 
+									 style="float:left" 
+									 class="con-image" >
+									<img 
+										 onclick="displayMyAduio('thirstyAudio.mp3')"
+										 src="images/p21e4q1_3.png" style="max-width:115% ;margin-left:-30px ;margin-top:65px "  >
+					 </div>
+									<div  class="con-items text-center"style="left:60px ; top:-228px" >
+										<div class="numbers">
+											<div >1</div>
+											<div >2</div>
+											<div >3</div>
+											<div >4</div>
+											<div class="correct">5</div>
+										</div>
+										<div class="con-result" onclick="showNumbersList(this)"></div>
+									</div>
+								</div>
+				
+				<!-----------------------fourth question-------------------------->
+				 <div  class="con-question-details" id="3">
+								<div  style="float:left ; " 
+									 class="con-image" >
+									<img 
+										  onclick="displayMyAduio('scaredAudio.mp3')"
+										 src="images/p21e4q1_4.png" style="max-width:120% ;margin-left:-30px ;margin-top:45px" >
+					 					</div>
+									<div  class="con-items  text-center" style="left:50px;top:-232px">
+										<div class="numbers">
+											<div> 1</div>
+											<div >2</div>
+											<div >3</div>
+											<div class="correct">4</div>
+											<div >5</div>
+										</div>
+										<div class="con-result" onclick="showNumbersList(this)"></div>
+									</div>
+								</div>
+				<!--------------------fifth quetion------------------------------------->
+				 <div  class="con-question-details" id="4">
+								<div 
+									 class="con-image" >
+									<img 
+										 onclick="displayMyAduio('excitedAudio.mp3')"
+										 src="images/p21e4q1_5.png" style="max-width:155% ;;margin-left:-50px ;margin-top:45px">
+					 </div>
+									<div  class="con-items  text-center" style="left:70px">
+										<div class="numbers">
+											<div class="correct">1</div>
+											<div >2</div>
+											<div >3</div>
+											<div >4</div>
+											<div >5</div>
+										</div>
+										<div id="result" class="con-result" onclick="showNumbersList(this)"></div>
+									</div>
+								</div>
+				
+				<!--------------------end of quetion------------------------------------->
+			</div>
+		</section>		
+				
+	<!---------------------end of question section------------------------------->	
+				
+		<!--------------------------start of opations seation-------------------->
+		<section class="opation">
+			
+			<div 
+				 onclick="restart()"
+				 class="col-xs-1 restart"
+				 ><img src="images/replay_icon.png" class="" style="max-width:130%">
+			</div>
+			
+			<div class="col-xs-5 instructions" >
+				
+				
+			<div class="col-xs-2">
+				<img src="images/play.png" id="display"  onclick="displayAudio()">
+			<img src="images/pause.png" onclick="pauseAudio()" id="pause" class="dis">
+				</div>	
+			
+				<div class="col-xs-10">
+					<audio 
+						   id="aud"
+						   >
+				<source src="audio/allAudio.mp3" type="audio/mpeg">
+			</audio>
+				<input 
+					   id="dur"
+					  type="range"
+					   value="0"
+					   step="any"
+					   max="9.5">
+				</div>
+			
+				
+				
+			</div>
+			
+			<div 
+				 onclick="showAllResult()"
+				 class="col-xs-1 col-lg-offset-1 col-md-offset-1 col-sm-offset-1  col-xs-offset-1 see-result"
+				 ><img src="images/showAns_icon.png"  style="max-width:150%">
+			</div>
+			
+		</section>
+				 
+	<!--------------------------end of opations seation-------------------->			
+			
+				
+			</div>
+		</section>
+		
+		
+		
+		<!-------------------end of container section------------->
+	
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		
+		<!-----------------------scripts------------------>
+		<!-------------------add jquery and bootstrap cdn ------------->
+		<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+		 <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+		<!------------------------add underscore cdn------------->
+		 <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.6.0/underscore-min.js"></script>
+		<!------------------------add my script------------->
+		<script src="js/resize.js"></script>
+		<script src="js/javascriptCode.js"></script>
+		<!-------------------------prefix free-------------------->
+		<script src="https://cdn.jsdelivr.net/npm/prefixfree@1.0.0/prefixfree.min.js">
+		
+	</body>
+	<!----------------end of body tag------------------>
+</html>	
